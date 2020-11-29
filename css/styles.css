@@ -1,3 +1,186 @@
+/********************FONTS*********************/
+
+@font-face {
+    src: url(../fonts/PlayfairDisplay-ExtraBold.ttf);
+    font-family: title-font;
+}
+
+@font-face {
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: text-font;
+}
+
+/********************ELEMENTS*********************/
+
+html.home-page {
+  background: url(../images/mountains.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+hr {
+    color: lightgrey;
+    margin-left: 0;
+    border-width: 10px;
+    border-style: dotted;
+    height: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
 body {
-    background-color: #d9e4dd;
+    margin: 0;
+}
+
+h1 {
+    font-family: title-font;
+    font-size: calc(1rem + 2vw);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    font-family: text-font;
+    font-size: calc(0.8rem + 0.5vw)
+}
+
+ul.text-list {
+    list-style: none;
+    font-family: text-font;
+}
+
+li.text-list {
+    margin: 1rem;
+}
+
+li.text-list::before {
+    content: "\2014";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #43506B; /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2em; /* Also needed for space (tweak if needed) */
+    margin-left: -3.5em; /* Also needed for space (tweak if needed) */
+}
+
+/********************NAVBAR*********************/
+
+.nav-bar {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+    background-color: #43506B;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #43506B;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-item:hover {
+    background-color: #202633;
+}
+
+.nav-link {
+    display: block;
+    color: aliceblue;
+    font-family: text-font;
+    font-size: 1.5rem;
+    padding: 10px 15px 11px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/********************CLASSES*********************/
+
+.header-h1 {
+    position: absolute;
+    margin: 0 auto 0 50px;
+    bottom: 100px;
+    font-size: calc(3rem + 2vw);
+    font-family: title-font;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: aliceblue;
+}
+
+.header-p {
+    position: absolute;
+    margin: 0 auto 0 50px;
+    bottom: 40px;
+    font-size: calc(1rem + 2vw);
+    font-family: text-font;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: aliceblue;
+}
+
+.coming-soon {
+    position: absolute;
+    bottom: 50%;
+    margin: 0 auto 0 50px;
+    font-size: calc(2rem + 2vw);
+    color: #202633;
+    font-style: italic;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.text-block {
+    position: absolute;
+    width: 50%;
+    margin: 50px auto 0 50px;
+    line-height: 1.5;
+}
+
+.portrait {
+    position: absolute;
+    display: inline-block;
+    right: 10%;
+    left: auto;
+    top: 50px;
+    height: calc(100px + 20vw);
+}
+
+.top {
+    background-color: aliceblue;
+}
+
+.middle {
+    background-color: #202633;
+}
+
+.bottom {
+    background-color: aliceblue;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #202633;
+    width: 100%;
+    color: aliceblue;
+}
+
+.footer-p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
 }
